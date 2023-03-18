@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
             velocity += Time.deltaTime * acceleration;
         }
         if(!forwardPressed && velocity > 0) {
-            velocity -= Time.deltaTime * acceleration;
+            velocity -= Time.deltaTime * deceleration;
         }
         if(!forwardPressed && velocity < 0) {
             velocity = 0.0f;
